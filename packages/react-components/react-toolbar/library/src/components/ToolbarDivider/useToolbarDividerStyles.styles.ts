@@ -30,7 +30,7 @@ export const useToolbarDividerStyles_unstable = (state: ToolbarDividerState): To
   state.root.className = mergeClasses(
     state.root.className,
     toolbarDividerStyles.root,
-    vertical && toolbarDividerStyles.vertical,
+    !vertical && toolbarDividerStyles.vertical,
     userClassName,
   );
   return state;
